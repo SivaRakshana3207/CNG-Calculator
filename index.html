@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNG Calculator</title>
   <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-r from-violet-500 to-pink-500 min-h-screen">
@@ -14,15 +15,17 @@
                 <input type="number" id="trip-distance" class="input-field" placeholder="Trip Distance">
             </div>
             <div class="flex flex-col space-y-1 mb-5">
-                <label for="trip-distance">Fuel Efficiency <span class="text-red-500 font-semibold">*</span></label>
-                <input type="number" id="trip-distance" class="input-field" placeholder="24">
+                <label for="fuel-efficiency">Fuel Efficiency <span class="text-red-500 font-semibold">*</span></label>
+                <input type="number" id="fuel-efficiency" class="input-field" placeholder="20">
             </div>
             <div class="flex flex-col space-y-1">
-                <label for="trip-distance">Fuel Cost <span class="text-red-500 font-semibold">*</span></label>
-                <input type="number" id="trip-distance" class="input-field" placeholder="84">
+                <label for="fuel-cost">Fuel Cost <span class="text-red-500 font-semibold">*</span></label>
+                <input type="number" id="fuel-cost" class="input-field" placeholder="92">
             </div>
         </form>
-        <button class="bg-red-500 w-full text-center p-1.5 text-white rounded mb-5">Calculate</button>
+        <button class="bg-red-500 w-full text-center p-1.5 text-white rounded mb-5" id="calculate-btn">Calculate</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
